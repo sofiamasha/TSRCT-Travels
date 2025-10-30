@@ -42,7 +42,7 @@ Focamos em:
 
 📸 *Exemplo do visual do app:*
 
-![Preview do TSRCT Travels](![alt text]({0F97A2F3-57FA-4B48-8C8A-A7D6E90DBBA9}.png))
+![alt text]({0F97A2F3-57FA-4B48-8C8A-A7D6E90DBBA9}.png)
 
 ---
 
