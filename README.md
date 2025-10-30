@@ -42,7 +42,7 @@ Focamos em:
 
 📸 *Exemplo do visual do app:*
 
-(![alt text]({285A764A-1CA6-47F8-8F53-876250B8F12B}.png))
+(![alt text]{285A764A-1CA6-47F8-8F53-876250B8F12B}.png)
 
 ---
 
@@ -71,7 +71,7 @@ Focamos em:
 |------|--------|--------|
 | Sofia | Desenvolvimento & UI/UX | [@sofia_vlaz_](https://github.com/sofiamasha) |
 | Tony | CEO | [@tonyse7e](https://github.com/tony) |
-| Levi | Backend & Integrações | (https://github.com/Levi) |
+| Levi | Backend & Integrações | [@Levi](https://github.com/Levi) |
 | Marcos | Backend & Integrações | [@marcxsll](https://github.com/marcos) |
 
 ---
@@ -88,7 +88,7 @@ O **TSRCT Travels** é apenas o primeiro passo dessa jornada.
 ## 📬 Contato
 
 📧 **contato@tesseract-corporation.com**  
-🌐 [tsrcttravels.com](https://tesseract-corporation.com/?fbclid=PAZXh0bgNhZW0CMTEAAadJtwxN3XFNOOnKoEHpoiZCzI6p-RNkEiQqWztuoSJ4ZwKCIipZ_gEv3vci_w_aem_dGhdkZBikC946YCxjzbLcw)  
+🌐 [tsrctcorporation.com](https://tesseract-corporation.com/?fbclid=PAZXh0bgNhZW0CMTEAAadJtwxN3XFNOOnKoEHpoiZCzI6p-RNkEiQqWztuoSJ4ZwKCIipZ_gEv3vci_w_aem_dGhdkZBikC946YCxjzbLcw)  
 📱 [@tesseract.corporation](https://www.instagram.com/tesseract.corporation/)
 
 ---
