@@ -71,8 +71,8 @@ Focamos em:
 |------|--------|--------|
 | Sofia | Desenvolvimento & UI/UX | [@sofia_vlaz_](https://github.com/sofiamasha) |
 | Tony | CEO | [@tonyse7e](https://github.com/tony) |
-| Levi | Backend & Integrações | [@Levi](https://github.com/Levi) |
-| Marcos | Backend & Integrações | [@marcxsll](https://github.com/marcos) |
+| Levi | Backend & Integrações | [@Levi](https://github.com/LeviBenzecry) |
+| Marcos | Backend & Integrações | [@marcxsll](https://github.com/MarcosLacerda) |
 
 ---
 
