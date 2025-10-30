@@ -42,7 +42,7 @@ Focamos em:
 
 📸 *Exemplo do visual do app:*
 
-(![alt text]{285A764A-1CA6-47F8-8F53-876250B8F12B}.png)
+((![alt text]{285A764A-1CA6-47F8-8F53-876250B8F12B}.png))
 
 ---
 
