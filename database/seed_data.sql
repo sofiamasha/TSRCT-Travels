@@ -1,25 +1,30 @@
--- Arquivo: database_setup/03_seed_data.sql
-
 USE travels_db;
 
--- Inserindo um usuário de teste (IMPORTANTE: A senha "123456" DEVE ser trocada por um HASH na aplicação real!)
+-- 1. Cria um usuário padrão (o ID dele será 1)
 INSERT INTO users (username, email, password_hash) VALUES
-('dev_tester', 'teste@tsrct.com', '$2a$10$aBcDeFgHiJkLmNoPqRsTuVwXyZ1234567890abcdefghijklmnoPqRsTuVwXyZ12'); -- Placeholder de hash
+('test_user', 'teste@email.com', '$2a$10$aBcDeFgHiJkLmNoPqRsTuVwXyZ0987654321fedcba1234567890'); 
 
--- Assumindo que o user_id do 'dev_tester' gerado seja 1
-SET @test_user_id = LAST_INSERT_ID(); -- Captura o ID gerado (pode não funcionar em todos os SQL clients, mas é um bom intento)
-
--- Criando a Carteira para o usuário de teste (usando 1 como ID fixo para simplificar o seed)
+-- 2. Cria a carteira dele, já com os pontos da tela inicial
 INSERT INTO wallets (user_id, current_points) VALUES
-(1, 124580); -- Usando o valor da sua tela Figma como exemplo inicial
+(1, 124580); 
 
--- Criando um Histórico Simples
+-- 3. Adiciona um histórico para justificar o saldo
 INSERT INTO point_history (user_id, amount, type, description) VALUES
-(1, 100000, 'bonus', 'Bônus de boas-vindas.'),
-(1, -50, 'purchase', 'Tentativa de resgate de cupom.');
+(1, 200000, 'acquisition', 'Pontos de Boas-Vindas e Promoção Inicial.'),
+(1, -75420, 'purchase', 'Compra de Pacote Viagem Padrão.');
 
--- Criando uma Viagem de Exemplo
-INSERT INTO trips (user_id, destination_country, destination_city, start_date, status) VALUES
-(1, 'França', 'Paris', '2026-05-10', 'planning');
+-- 4. Cria o Roteiro principal (Trip)
+INSERT INTO trips (user_id, destination_name, destination_city, start_date, trip_status) VALUES
+(1, 'Tour Paris Clássico', 'Paris', '2026-06-01', 'active');
 
--- Comentário: Usei 'LAST_INSERT_ID()' e o ID fixo '1' como um jeito simples de ligar os dados. Em um projeto real, você faria isso via código da aplicação (backend).
+-- 5. Detalha o Roteiro (Os 3 Passos do Figma - Seu roteiro pfto)
+-- Como o trip_id(o "RG" de cada roteiro) gerado acima é 1(pq é o primeiro a ser criado no banco vazio), usamos ele aqui.
+INSERT INTO trip_items (trip_id, item_sequence, item_title, item_details) VALUES
+(1, 1, 'Chegada e Check-in', 'Chegar no aeroporto e ir direto para o hotel.'),
+(1, 2, 'Almoço e Louvre', 'Visita guiada ao Museu do Louvre.'),
+(1, 3, 'Passeio Noturno', 'Cruzeiro pelo Rio Sena.');
+
+-- 6. Cadastra algumas experiências disponíveis no catálogo
+INSERT INTO cultural_experiences (name, description, estimated_cost_points) VALUES
+('Aula de Culinária Francesa', 'Aprenda a fazer croissants!', 1500),
+('Visita ao Museu d\'Orsay', 'Arte impressionista incrível.', 800);
